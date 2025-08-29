@@ -1,0 +1,23 @@
+name: advanced_html_to_pdf_example
+description: Example app for testing advanced_html_to_pdf package
+publish_to: "none"
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.5.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # This is the package under test (points to parent folder)
+  advanced_html_to_pdf:
+    path: ../
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
