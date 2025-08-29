@@ -76,8 +76,6 @@ class _PdfDemoPageState extends State<PdfDemoPage> {
       options: HtmlToPdfOptions(filename: "demo"),
     );
 
-    print("PDF Path: $path");
-
     setState(() => filePath = path);
   }
 

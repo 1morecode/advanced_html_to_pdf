@@ -1,5 +1,3 @@
-library advanced_html_to_pdf;
-
 import 'dart:typed_data';
 import 'dart:io' show File, Directory;
 import 'package:path_provider/path_provider.dart';

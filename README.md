@@ -1,42 +1,121 @@
+<p align="center">
+Advanced HTML to PDF - Package Developed By <a href="https://1morecode.com">1 More Code</a>.
+</p>
 
-# advanced_html_to_pdf
+[![pub package](https://img.shields.io/badge/pub-v1.0.5-blue)](https://pub.dev/packages/advanced_html_to_pdf) [![Build Status](https://img.shields.io/badge/publisher-1morecode.com-lightgrey)](https://1morecode.com)
+[![Build Status](https://img.shields.io/badge/platform-flutter%7Cweb%7Cdesktop-green)](https://flutter.dev)
 
-A Flutter package to easily convert HTML content into high-quality PDF documents.
+<p align="center">
+Easily convert HTML content into high-quality PDF documents in Flutter.
+</p>
 
-## Features
+---
 
-- Convert raw HTML into a PDF document
-- Customize PDF output with headers, footers, and styling
-- Works with Flutter mobile, web, and desktop
+## 📝 About
 
-## Installation
+**Advanced HTML to PDF** is a simple yet powerful Flutter package that lets you convert **HTML content** into professional **PDF files**.  
+It works across **Android, iOS, Linux, macOS, web, Windows** and supports custom filenames, directories, and paper formats.
+
+---
+
+## ✨ Features
+
+- Convert **raw HTML** into a PDF document
+- Fully customizable with **headers, footers, and styles**
+- Works with **Flutter mobile, web, and desktop**
+- Supports saving in **documents** or **temporary directory**
+- Access **file path** and **raw bytes** for sharing
+
+---
+
+## To use import the `advanced_html_to_pdf` package:
+```dart
+import 'package:advanced_html_to_pdf/advanced_html_to_pdf.dart';
+```
+
+#### How to use `AdvancedHtmlToPdf` property:
+
+Example 1. Create HTML to PDF to get Path:
+```html
+var htmlContent = """
+    <html>
+      <body>
+        <h1>Hello, PDF!</h1>
+        <p>This PDF was generated from HTML.</p>
+      </body>
+    </html>
+  """;
+```
+```dart
+final path = await AdvancedHtmlToPdf.fromHtmlToFile(
+  htmlContent,
+  options: HtmlToPdfOptions(filename: "demo"),
+);
+```
+
+Example 2. Create HTML to PDF to get File Object:
+```html
+var htmlContent = """
+    <html>
+      <body>
+        <h1>Hello, PDF!</h1>
+        <p>This PDF was generated from HTML.</p>
+      </body>
+    </html>
+  """;
+```
+```dart
+final path = await AdvancedHtmlToPdf.fromHtmlToFileObject(
+  htmlContent,
+  options: HtmlToPdfOptions(filename: "demo"),
+);
+```
+
+Example 3. Create HTML to PDF to get fromHtmlToBytes:
+```html
+var htmlContent = """
+    <html>
+      <body>
+        <h1>Hello, PDF!</h1>
+        <p>This PDF was generated from HTML.</p>
+      </body>
+    </html>
+  """;
+```
+```dart
+final path = await AdvancedHtmlToPdf.fromHtmlToBytes(
+  htmlContent,
+  options: HtmlToPdfOptions(filename: "demo"),
+);
+```
+
+Here is the output:
+<p>
+<img src="https://github.com/1morecode/advanced_html_to_pdf/assets/57178146/173db5e4-9fc4-4103-a196-f7106e2d1a10">
+</p>
+
+## 📦 Installation
 
 Add this to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
   advanced_html_to_pdf: ^0.0.1
-```
 
-## Usage
+### Issues & Feedback
 
-```dart
-import 'package:advanced_html_to_pdf/advanced_html_to_pdf.dart';
-import 'dart:io';
+Please file an [issue](https://github.com/1morecode/advanced_html_to_pdf/issues) to send feedback or report a bug,  
+If you want to ask a question or suggest an idea then you can [open an discussion](https://github.com/1morecode/advanced_html_to_pdf/discussions).  
+Thank you!
 
-void generatePdf() async {
-  final pdfFile = await AdvancedHtmlToPdf.convertHtml(
-    html: "<h1>Hello PDF</h1><p>This is generated from HTML.</p>",
-    fileName: "example.pdf",
-  );
-  print("PDF saved at: $pdfFile");
-}
-```
+### Contributing
 
-## Example App
+Every pull request is most welcome 🤝.
 
-Check the `/example` folder for a complete Flutter app demonstrating usage.
+### Support
 
-## License
+If this package saves your time. You can now buy me a coffee! 
 
-This project is licensed under the MIT License.
+Scan bellow QR code or click and don't forget to leave a message there:
+
+<a href="https://bmc.link/1morecode" target="_blank"><img src="https://github.com/1morecode/advanced_html_to_pdf/assets/57178146/1995d3e2-b061-4655-81d5-df1d41d9bfb6" alt="Buy Me A Coffee" style="height: 160px !important" ></a>
