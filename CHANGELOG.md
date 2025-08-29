@@ -1,6 +1,8 @@
 
-## 0.0.1
+## 0.0.2
+- Added example asset `demo.pdf`
+- Updated README with detailed usage examples
+- Documentation improvements (asset preview instructions)
 
-- Initial release of advanced_html_to_pdf
-- Supports converting HTML strings into PDF documents
-- Includes example Flutter demo
+## 0.0.1
+- Initial release

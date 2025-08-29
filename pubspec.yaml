@@ -1,7 +1,7 @@
 
 name: advanced_html_to_pdf
 description: A Flutter package to easily convert HTML content into high-quality PDF documents.
-version: 0.0.1
+version: 0.0.2
 homepage: https://github.com/1morecode/advanced_html_to_pdf
 repository: https://github.com/1morecode/advanced_html_to_pdf
 issue_tracker: https://github.com/1morecode/advanced_html_to_pdf/issues
@@ -9,9 +9,8 @@ topics:
   - pdf
   - html
   - converter
-  - document
-  - html to pdf
-  - html to pdf converter
+  - html-to-pdf
+  - html-to-pdf-converter
 
 environment:
   sdk: ">=3.5.0 <4.0.0"
